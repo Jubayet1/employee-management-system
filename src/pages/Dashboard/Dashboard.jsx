@@ -16,8 +16,29 @@ const Dashboard = () => {
     const handleEdit = () => {
         console.log("handle edit")
     }
-    const handleDelete = () => {
-        console.log("handle delete")
+    const handleDelete = (id) => {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            showCancelButton: true,
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, cancel!',
+        }).then(result => {
+            if (result.value) {
+                const [employee] = employees.filter(employee => employee.id === id);
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Deleted!',
+                    text: `${employee.firstName} ${employee.lastName}'s data has been deleted.`,
+                    showConfirmButton: false,
+                    timer: 1500,
+                });
+
+                setEmployees(employees.filter(employee => employee.id !== id));
+            }
+        });
     }
     return (
         <div className='container'>

@@ -35,8 +35,7 @@ const Add = ({ employees, setEmployees, setIsAdding }) => {
       salary,
       date
     }
-    employees.push(newEmployee);
-    setEmployees(employees);
+    setEmployees([...employees, newEmployee]);
     setIsAdding(false);
 
     Swal.fire({
