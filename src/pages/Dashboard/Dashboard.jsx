@@ -20,7 +20,7 @@ const Dashboard = () => {
         console.log("handle delete")
     }
     return (
-        <div>
+        <div className='container'>
             {!isAdding && !isEditing && (
                 <>
                     <Header />

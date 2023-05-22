@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Add = () => {
+const add = () => {
   return (
-    <div>Add</div>
+    <div>add</div>
   )
 }
 
-export default Add
+export default add
