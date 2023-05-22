@@ -1,8 +1,13 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({ setIsAdding }) => {
     return (
-        <div>Header</div>
+        <header>
+            <h1>Employee Management Software</h1>
+            <div style={{ marginTop: '30px', marginBottom: '18px' }}>
+                <button onClick={() => setIsAdding(true)} className='round-button'>Add Button</button>
+            </div>
+        </header>
     )
 }
 

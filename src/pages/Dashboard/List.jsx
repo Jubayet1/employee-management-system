@@ -1,8 +1,8 @@
 import React from 'react'
 
-function List({ employees, handleEdit, handleDelete }) {
+const List = ({ employees, handleEdit, handleDelete }) => {
 
-    const formatter = new Intl.NumberFormat('en-US', {
+    const formatter = new Intl.NumberFormat('en-us', {
         style: 'currency',
         currency: 'USD',
         minimumFractionDigits: null

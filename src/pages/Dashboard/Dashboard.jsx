@@ -23,7 +23,9 @@ const Dashboard = () => {
         <div className='container'>
             {!isAdding && !isEditing && (
                 <>
-                    <Header />
+                    <Header
+                        setIsAdding={setIsAdding}
+                    />
                     <List
                         employees={employees}
                         handleEdit={handleEdit}
