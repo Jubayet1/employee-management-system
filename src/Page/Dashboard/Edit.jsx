@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import Swal from 'sweetalert2';
 
-function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
+import { useDispatch } from 'react-redux';
+import { updateEmployee } from '../../redux';
+
+function Edit({ selectedEmployee, setIsEditing }) {
+    const dispatch = useDispatch();
 
     const id = selectedEmployee.id;
 
@@ -32,14 +36,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
             date
         };
 
-        for (let i = 0; i < employees.length; i++) {
-            if (employees[i].id === id) {
-                employees.splice(i, 1, employee);
-                break;
-            }
-        }
-
-        setEmployees(employees);
+        dispatch(updateEmployee(id, employee));
         setIsEditing(false);
 
         Swal.fire({

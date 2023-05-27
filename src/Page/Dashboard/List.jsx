@@ -1,8 +1,8 @@
 import React from 'react'
 
-const List = ({ employees, handleEdit, handleDelete }) => {
+function List({ employees, handleEdit, handleDelete }) {
 
-    const formatter = new Intl.NumberFormat('en-us', {
+    const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
         minimumFractionDigits: null
@@ -44,7 +44,7 @@ const List = ({ employees, handleEdit, handleDelete }) => {
                                 </td>
                                 <td className="text-left">
                                     <button
-                                        onClick={() => handleDelete(employee.id)}
+                                        onClick={() => handleDelete(employee)}
                                         className="button muted-button"
                                     >
                                         Delete

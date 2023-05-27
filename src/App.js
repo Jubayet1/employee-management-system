@@ -1,10 +1,11 @@
-import Dashboard from "./pages/Dashboard/Dashboard";
+import './App.css';
+import Dashboard from './Page/Dashboard/Dashboard';
 
 function App() {
   return (
-    <>
+    <div>
       <Dashboard />
-    </>
+    </div>
   );
 }
 

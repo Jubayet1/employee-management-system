@@ -202,9 +202,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
 }
 
@@ -212,9 +212,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -223,9 +223,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -275,8 +275,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -286,8 +286,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -295,7 +295,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type='search'] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -305,7 +305,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -665,7 +665,7 @@ dd {
  */
 .clearfix::before,
 .clearfix::after {
-  content: " ";
+  content: ' ';
   display: block;
 }
 
@@ -787,9 +787,9 @@ dd {
 .button,
 a.button,
 button,
-[type="submit"],
-[type="reset"],
-[type="button"] {
+[type='submit'],
+[type='reset'],
+[type='button'] {
   -webkit-appearance: none;
   display: inline-block;
   border: 1px solid #0366ee;
@@ -813,9 +813,9 @@ button,
 .button:hover,
 a.button:hover,
 button:hover,
-[type="submit"]:hover,
-[type="reset"]:hover,
-[type="button"]:hover {
+[type='submit']:hover,
+[type='reset']:hover,
+[type='button']:hover {
   border: 1px solid #0250bc;
   background: #0250bc;
   color: #ffffff;
@@ -828,12 +828,12 @@ a.button:focus,
 a.button:active,
 button:focus,
 button:active,
-[type="submit"]:focus,
-[type="submit"]:active,
-[type="reset"]:focus,
-[type="reset"]:active,
-[type="button"]:focus,
-[type="button"]:active {
+[type='submit']:focus,
+[type='submit']:active,
+[type='reset']:focus,
+[type='reset']:active,
+[type='button']:focus,
+[type='button']:active {
   border: 1px solid #0250bc;
   background: #0250bc;
   color: #ffffff;
@@ -843,9 +843,9 @@ button:active,
 .button::-moz-focus-inner,
 a.button::-moz-focus-inner,
 button::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="button"]::-moz-focus-inner {
+[type='submit']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='button']::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -905,20 +905,20 @@ a.full-button {
 /**
  * Forms
  */
-[type="color"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="search"],
-[type="tel"],
-[type="text"],
-[type="url"],
-[type="week"],
-[type="time"],
+[type='color'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='url'],
+[type='week'],
+[type='time'],
 select,
 textarea {
   display: block;
@@ -934,53 +934,53 @@ textarea {
   line-height: 1;
 }
 
-[type="color"]:hover,
-[type="date"]:hover,
-[type="datetime"]:hover,
-[type="datetime-local"]:hover,
-[type="email"]:hover,
-[type="month"]:hover,
-[type="number"]:hover,
-[type="password"]:hover,
-[type="search"]:hover,
-[type="tel"]:hover,
-[type="text"]:hover,
-[type="url"]:hover,
-[type="week"]:hover,
-[type="time"]:hover,
+[type='color']:hover,
+[type='date']:hover,
+[type='datetime']:hover,
+[type='datetime-local']:hover,
+[type='email']:hover,
+[type='month']:hover,
+[type='number']:hover,
+[type='password']:hover,
+[type='search']:hover,
+[type='tel']:hover,
+[type='text']:hover,
+[type='url']:hover,
+[type='week']:hover,
+[type='time']:hover,
 select:hover,
 textarea:hover {
   border: 1px solid #c5c5c5;
 }
 
-[type="color"]:focus,
-[type="color"]:active,
-[type="date"]:focus,
-[type="date"]:active,
-[type="datetime"]:focus,
-[type="datetime"]:active,
-[type="datetime-local"]:focus,
-[type="datetime-local"]:active,
-[type="email"]:focus,
-[type="email"]:active,
-[type="month"]:focus,
-[type="month"]:active,
-[type="number"]:focus,
-[type="number"]:active,
-[type="password"]:focus,
-[type="password"]:active,
-[type="search"]:focus,
-[type="search"]:active,
-[type="tel"]:focus,
-[type="tel"]:active,
-[type="text"]:focus,
-[type="text"]:active,
-[type="url"]:focus,
-[type="url"]:active,
-[type="week"]:focus,
-[type="week"]:active,
-[type="time"]:focus,
-[type="time"]:active,
+[type='color']:focus,
+[type='color']:active,
+[type='date']:focus,
+[type='date']:active,
+[type='datetime']:focus,
+[type='datetime']:active,
+[type='datetime-local']:focus,
+[type='datetime-local']:active,
+[type='email']:focus,
+[type='email']:active,
+[type='month']:focus,
+[type='month']:active,
+[type='number']:focus,
+[type='number']:active,
+[type='password']:focus,
+[type='password']:active,
+[type='search']:focus,
+[type='search']:active,
+[type='tel']:focus,
+[type='tel']:active,
+[type='text']:focus,
+[type='text']:active,
+[type='url']:focus,
+[type='url']:active,
+[type='week']:focus,
+[type='week']:active,
+[type='time']:focus,
+[type='time']:active,
 select:focus,
 select:active,
 textarea:focus,
@@ -1019,7 +1019,7 @@ select::-ms-expand {
   display: none;
 }
 
-[type="range"] {
+[type='range'] {
   width: 100%;
 }
 
